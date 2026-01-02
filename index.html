@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Humanizer Pro | Professional Text Transformer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="badge">AI Engine v1.5</div>
+            <h1>Transform to <span>Humanized Text</span></h1>
+            <p>Make your AI-generated content indistinguishable from human writing.</p>
+        </header>
+
+        <div class="tool-grid">
+            <div class="panel">
+                <div class="panel-header">Input AI Content</div>
+                <textarea id="inputText" placeholder="Paste your AI text here (at least 20 words)..."></textarea>
+                <div class="panel-footer">
+                    <button id="humanizeBtn" class="primary-btn">
+                        <i class="fas fa-bolt"></i> Humanize Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">Humanized Result</div>
+                <div id="outputContainer" class="output-viewer">
+                    <div id="placeholderText">Output will appear here...</div>
+                    <div id="loader" class="hidden">
+                        <div class="spinner"></div>
+                        <p>Processing with Gemini AI...</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button onclick="copyContent()" class="secondary-btn">
+                        <i class="fas fa-copy"></i> Copy Result
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
