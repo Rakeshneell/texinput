@@ -14,7 +14,7 @@ async function humanizeText() {
     
     // --- API CONFIGURATION ---
     // Your provided API Key is now integrated
-    const API_KEY = "AIzaSyA3_DRDqkghQHRu6ZdSHLGpWYQgznsmyLs"; 
+    const API_KEY = "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"; 
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
     // 1. Input Validation: Minimum 20 characters for best results
